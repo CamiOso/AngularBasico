@@ -11,4 +11,14 @@ import { Component} from "@angular/core";
 
 })
 
-export class UsuarioComponent {}
+export class UsuarioComponent {
+  usuarios=[ 'Luis','Fernando','Maria']
+  usuarioNombre='';
+
+  onAgregarUsuario(){
+
+    this.usuarios.push(this.usuarioNombre);
+
+  }
+
+}
