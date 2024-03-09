@@ -1,8 +1,8 @@
 
 <h1> Bienvenido Usuario</h1>
 
-<input type="text" [(ngModel)]='usuarioNombre'>
-<button (click)="onAgregarUsuario()">Agregar</button>
+<input *ngIf="visible" type="text" [(ngModel)]='usuarioNombre'>
+<button  *ngIf="visible"  (click)="onAgregarUsuario()">Agregar</button>
 
  <div *ngFor="let usr of usuarios">
   {{usr}}
@@ -10,3 +10,4 @@
 
 
  </div>
+ 
