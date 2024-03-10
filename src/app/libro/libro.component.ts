@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input,EventEmitter,Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-libro',
@@ -7,4 +8,12 @@ import { Component, Input } from '@angular/core';
 })
 export class LibroComponent {
   @Input() tituloLibro: string | undefined;
+
+ @Output() libroClicked=new EventEmitter();
+
+  onclicked(){
+
+    this.libroClicked.emit();
+
+  }
 }

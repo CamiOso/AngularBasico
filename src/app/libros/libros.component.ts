@@ -5,5 +5,18 @@ import { Component } from '@angular/core';
   templateUrl: './libros.component.html',
 })
 export class LibrosComponent {
-  libros = ['Libro 1', 'Libro 2', 'Libro 3'];
+  libros = ['Matematica 1', 'Algoritmos Basicos', 'Libro 3'];
+  eliminarLibro(libro:any){
+
+    this.libros=this.libros.filter(p=>p!==libro);
+
+  }
+
+  guardarLibro(f:any){
+
+    if(f.valid){
+      this.libros.push(f.value.nombreLibro);
+
+    }
+  }
 }
