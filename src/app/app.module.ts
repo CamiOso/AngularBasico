@@ -9,6 +9,7 @@ import { LibrosComponent } from './libros/libros.component';
 import { LibroComponent } from './libro/libro.component';
 import { librosService } from './services/libros.service';
 import { InicioComponent } from './inicio.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { InicioComponent } from './inicio.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [librosService],
+  providers: [librosService, provideAnimationsAsync()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
