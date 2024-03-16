@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { LibrosComponent } from './libros/libros.component';
 import { LibroComponent } from './libro/libro.component';
 import { librosService } from './services/libros.service';
+import { InicioComponent } from './inicio.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { librosService } from './services/libros.service';
     UsuarioComponent,
     LibrosComponent,
     LibroComponent,
+    InicioComponent
 
 
   ],
