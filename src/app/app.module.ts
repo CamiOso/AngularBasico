@@ -11,6 +11,8 @@ import { librosService } from './services/libros.service';
 import { InicioComponent } from './inicio.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MaterialModule } from './material.module';
+import { RegistrarComponent } from './seguridad/registrar/registrar.component';
+import { LoginComponent } from './seguridad/login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MaterialModule } from './material.module';
     UsuarioComponent,
     LibrosComponent,
     LibroComponent,
-    InicioComponent
+    InicioComponent,
+    RegistrarComponent,
+    LoginComponent
 
 
   ],
